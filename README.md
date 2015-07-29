@@ -26,7 +26,7 @@ Syntax is as follows:
  
 
 2. aurrorItCompl()
-While ####aurrorIt()##### generates from light to dark, ####aurrorItCompl#### generates complimentary color for color-stop from given color.
+While ####aurrorIt() generates from light to dark, ####aurrorItCompl generates complimentary color for color-stop from given color.
 
 Syntax is as follows:
 
