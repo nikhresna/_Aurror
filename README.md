@@ -2,7 +2,7 @@
 Gradient mixin' library
 
 * Required SASS runnin' for use.
-* Currently works **only** on Chrome 10+
+* Currently works only on Chrome 10+
 
 
 This _Aurror auto generates good lookin' gradient with a single line of SASS.
@@ -11,7 +11,7 @@ Is recommended to run 'sass --watch assets/scss:assets' from _Aurror root direct
 Available in latest version library:
 
 1. aurrorIt()
-'aurrorIt()' generates gradient light to dark from selected color,
+generates gradient light to dark from selected color, 'aurrorIt'
 
 
 Syntax is as follows:
