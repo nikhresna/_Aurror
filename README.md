@@ -11,7 +11,7 @@ Is recommended to run 'sass --watch assets/scss:assets' from _Aurror root direct
 Available in latest version library:
 
 ## aurrorIt()
-#### aurrorIt generates gradient light to dark from selected color, 
+aurrorIt generates gradient light to dark from selected color, 
 
 
 Syntax is as follows:
@@ -26,7 +26,8 @@ Syntax is as follows:
  
 
 ## aurrorItCompl()
-While #### aurrorIt() generates from light to dark, #### aurrorItCompl generates complimentary color for color-stop from given color.
+WhileaurrorIt() generates from light to dark,
+aurrorItCompl generates complimentary color for color-stop from given color.
 
 Syntax is as follows:
 
