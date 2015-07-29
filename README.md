@@ -10,7 +10,7 @@ Is recommended to run 'sass --watch assets/scss:assets' from _Aurror root direct
 
 Available in latest version library:
 
-1. aurrorIt()
+## aurrorIt()
 generates gradient light to dark from selected color, 'aurrorIt'
 
 
