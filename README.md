@@ -23,7 +23,7 @@ Syntax is as follows:
 
 * $gradient-direction = top | left | bottom | right
 * $color-start = hex | rgb | rgba | hsl | hsla
-
+ 
 
 2. aurrorItCompl()
 While 'aurrorIt()' generates from light to dark, 'aurrorItCompl' generates complimentary color for color-stop from given color.
