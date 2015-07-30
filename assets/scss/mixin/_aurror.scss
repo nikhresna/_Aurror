@@ -1,0 +1,61 @@
+@mixin aurrorIt( $direction, $hex-start ) {
+	$hex-stop1 : ( $hex-start / 5 )*4;
+	$hex-stop2 : ( $hex-start / 5 )*3;
+	$hex-stop3 : ( $hex-start / 5 )*2;
+	$hex-stop4 : ( $hex-start / 5 )*1;
+
+	background-image: -webkit-linear-gradient( $direction, $hex-start 0%, $hex-stop4 100%);
+	background-image: -ms-linear-gradient( $direction, $hex-start 0%, $hex-stop4 100%);
+
+}
+
+@function aurrorPastel() {
+
+}
+
+@mixin aurrorItCompl( $direction, $h-start, $type, $modifier ) {
+	@if $type == pastel {
+	$s-start : 73%;
+	$l-start : 76%;
+	
+	$h-end :$h-start + $modifier;
+	$hsl-start : hsl( $h-start, $s-start, $l-start );
+	$hsl-end : hsl( $h-end, $s-start, $l-start );
+	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+	}
+	@if $type == gothic {
+	$s-start : 82%;
+	$l-start : 21%;
+	$h-end :$h-start + $modifier;
+	$hsl-start : hsl( $h-start, $s-start, $l-start );
+	$hsl-end : hsl( $h-end, $s-start, $l-start );
+	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+	}
+}
+
+@mixin animate_It( $anim_Name, $anim_Duration ) {
+	animation-name: $anim_Name;
+	animation-duration: $anim_Duration;
+	animation-iteration-count: 5;
+	filter: hue-rotate(0deg);
+}
+
+@mixin test{
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom, #EDD799 0%, #BF7F37 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom, #EDD799 0%, #BF7F37 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom, #EDD799 0%, #BF7F37 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EDD799), color-stop(1, #BF7F37));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom, #EDD799 0%, #BF7F37 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top, #EDD799 0%, #BF7F37 100%);
+}

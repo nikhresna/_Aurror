@@ -1,0 +1,13 @@
+
+
+/* plugin */
+@import "mixin/aurror";
+@import "variables/logocolors";
+
+body {
+	@include aurrorItCompl( top, 10, gothic, 180);
+	height: 100vh;
+}
+h1 {
+	color: #fff;
+}

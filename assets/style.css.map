@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAMA,IAAK;ECyBJ,gBAAgB,EAAE,sDAAkE;EDvBpF,MAAM,EAAE,KAAK;;AAEd,EAAG;EACF,KAAK,EAAE,IAAI",
+"sources": ["scss/style.scss","scss/mixin/_aurror.scss"],
+"names": [],
+"file": "style.css"
+}
