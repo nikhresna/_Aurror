@@ -5,9 +5,10 @@
 @import "variables/logocolors";
 
 body {
-	@include aurrorItCompl( top, 990, pastel );
+	@include aurrorItCompl( top, 10, pastel );
 	height: 100vh;
 }
 h1 {
-	color: #fff;
+	color: $facebookHex;
+	font-family: 'Montserrat';
 }
