@@ -1,3 +1,5 @@
+
+
 @mixin aurrorItMonochromatic( $direction, $color-start, $type ) {
 	@if $type == darker {
 		$color-stop : ( $color-start / 4 )*2;
@@ -5,6 +7,7 @@
 		background-image: -webkit-linear-gradient( $direction, $color-start 0%, $color-stop 100%);
 		background-image: -ms-linear-gradient( $direction, $color-start 0%, $color-stop 100%);
 	}
+
 	@if $type == lighter {
 		$color-stop : ( $color-start / 4 )*5;
 
@@ -14,15 +17,16 @@
 }
 
 @mixin aurrorItComplementary( $direction, $h-start, $type ) {
+	
 	@if $type == pastel {
 	$s-start : 73%;
 	$l-start : 76%;
-
 	$h-end :$h-start + 180;
 	$hsl-start : hsl( $h-start, $s-start, $l-start );
 	$hsl-end : hsl( $h-end, $s-start, $l-start );
 	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
 	}
+
 	@if $type == gothic {
 	$s-start : 82%;
 	$l-start : 21%;
@@ -31,14 +35,35 @@
 	$hsl-end : hsl( $h-end, $s-start, $l-start );
 	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
 	}
-}
 
-@mixin aurrorItAnalogous( $direction, $h-start ) {
-	$h-end : $h-start + 90;
-
-	$s-start : 73%;
-	$l-start : 76%;
+	@if $type == pale {
+	$s-start : 32%;
+	$l-start : 81%;
+	$h-end :$h-start + 180;
 	$hsl-start : hsl( $h-start, $s-start, $l-start );
 	$hsl-end : hsl( $h-end, $s-start, $l-start );
 	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+	}
+
+}
+
+@mixin aurrorItAnalogous( $direction, $h-start, $h-direction ) {
+	
+	@if $h-direction == left {
+		$h-end : $h-start + 90;
+		$s-start : 73%;
+		$l-start : 76%;
+		$hsl-start : hsl( $h-start, $s-start, $l-start );
+		$hsl-end : hsl( $h-end, $s-start, $l-start );
+		background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+	}
+
+	@if $h-direction == right {
+		$h-end : $h-start - 90;
+		$s-start : 73%;
+		$l-start : 76%;
+		$hsl-start : hsl( $h-start, $s-start, $l-start );
+		$hsl-end : hsl( $h-end, $s-start, $l-start );
+		background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+	}
 }

@@ -5,9 +5,9 @@
 @import "variables/logocolors";
 
 body {
-	/* @include aurrorItComplementary( top, 10, pastel ); */
 	/* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
-	@include aurrorItAnalogous( top, 100 );
+	/* @include aurrorItComplementary( top, 10, pale ); */
+	@include aurrorItAnalogous( top, 100, right );
 
 	height: 100vh;
 }

@@ -11,7 +11,7 @@ Is recommended to run sass --watch assets/scss:asset from _Aurror root directory
 Available in latest version library:
 
 ## aurrorItMonochromatic()
-aurrorIt generates gradient light to dark/dark to light from selected color, 
+aurrorItMonochromatic generates gradient light to dark/dark to light from selected color, 
 
 
 Syntax is as follows:
@@ -45,7 +45,8 @@ This mixin generates gradient of colors located adjacent (next to) to each other
 
 Syntax:
 .css-selector {
-	@include aurrorItAnalogous( $gradient-direction, $hue-start );
+	@include aurrorItAnalogous( $gradient-direction, $hue-start, $hue-direction );
 }
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
+* $hue-direction = left | right
