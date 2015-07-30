@@ -38,7 +38,7 @@ Syntax is as follows:
 
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
-* $color-type = pastel | gothic
+* $color-type = pastel | gothic | pale
 
 ## aurrorItAnalogous()
 This mixin generates gradient of colors located adjacent (next to) to each other on color wheel.
