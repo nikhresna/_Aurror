@@ -50,3 +50,7 @@ Syntax:
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
 * $hue-direction = left | right
+
+
+### added
+Socials logo color library = _Aurror/assets/scss/variables/_logocolors.scss
