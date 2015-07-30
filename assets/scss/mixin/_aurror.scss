@@ -1,11 +1,8 @@
-@mixin aurrorIt( $direction, $hex-start ) {
-	$hex-stop1 : ( $hex-start / 5 )*4;
-	$hex-stop2 : ( $hex-start / 5 )*3;
-	$hex-stop3 : ( $hex-start / 5 )*2;
-	$hex-stop4 : ( $hex-start / 5 )*1;
+@mixin aurrorIt( $direction, $color-start ) {
+	$color-stop : ( $color-start / 5 )*1;
 
-	background-image: -webkit-linear-gradient( $direction, $hex-start 0%, $hex-stop4 100%);
-	background-image: -ms-linear-gradient( $direction, $hex-start 0%, $hex-stop4 100%);
+	background-image: -webkit-linear-gradient( $direction, $color-start 0%, $color-stop 100%);
+	background-image: -ms-linear-gradient( $direction, $color-start 0%, $color-stop 100%);
 
 }
 
@@ -13,12 +10,12 @@
 
 }
 
-@mixin aurrorItCompl( $direction, $h-start, $type, $modifier ) {
+@mixin aurrorItCompl( $direction, $h-start, $type ) {
 	@if $type == pastel {
 	$s-start : 73%;
 	$l-start : 76%;
-	
-	$h-end :$h-start + $modifier;
+
+	$h-end :$h-start + 180;
 	$hsl-start : hsl( $h-start, $s-start, $l-start );
 	$hsl-end : hsl( $h-end, $s-start, $l-start );
 	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
@@ -26,7 +23,7 @@
 	@if $type == gothic {
 	$s-start : 82%;
 	$l-start : 21%;
-	$h-end :$h-start + $modifier;
+	$h-end :$h-start + 180;
 	$hsl-start : hsl( $h-start, $s-start, $l-start );
 	$hsl-end : hsl( $h-end, $s-start, $l-start );
 	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
