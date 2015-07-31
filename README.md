@@ -1,5 +1,7 @@
 # _Aurror
 Gradient mixin' library
+
+## Lines of infinity in a single line
 It has come to my concern that many developers have problem to find perfect color for gradients, and many designers have problems in coding. This _Aurror lets them create gradients in seconds while keeping colors seamless and coding dry.
 
 * Required SASS runnin' for use.

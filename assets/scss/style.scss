@@ -11,9 +11,9 @@
 
 body {
 	/* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
-	@include aurrorItComplementary( top, 100, pastel, 1, 0.7 );
+	/* @include aurrorItComplementary( top, 100, pastel, 1, 1 ); */
 	/* @include aurrorItAnalogous( top, 220, left, 1, 0.5 ); */
-
+	@include aurrorItTriad( top, 120, 73%, 76%, 1, 0.5, 1 );
 	height: 100vh;
 }
 h1 {
