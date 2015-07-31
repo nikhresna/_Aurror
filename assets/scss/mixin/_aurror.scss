@@ -16,36 +16,37 @@
 	}
 }
 
+
+@function test( $direction, $h-start, $s-start, $l-start ){
+	$h-end :$h-start + 180;
+	$hsl-start : hsl( $h-start, $s-start, $l-start );
+	$hsl-end : hsl( $h-end, $s-start, $l-start );
+	@return -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+}
+
 @mixin aurrorItComplementary( $direction, $h-start, $type ) {
 	
 	@if $type == pastel {
 	$s-start : 73%;
 	$l-start : 76%;
-	$h-end :$h-start + 180;
-	$hsl-start : hsl( $h-start, $s-start, $l-start );
-	$hsl-end : hsl( $h-end, $s-start, $l-start );
-	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+	background-image: test( $direction, $h-start, $s-start, $l-start );
 	}
 
 	@if $type == gothic {
 	$s-start : 82%;
 	$l-start : 21%;
-	$h-end :$h-start + 180;
-	$hsl-start : hsl( $h-start, $s-start, $l-start );
-	$hsl-end : hsl( $h-end, $s-start, $l-start );
-	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+	background-image: test( $direction, $h-start, $s-start, $l-start );
 	}
 
 	@if $type == pale {
 	$s-start : 32%;
 	$l-start : 81%;
-	$h-end :$h-start + 180;
-	$hsl-start : hsl( $h-start, $s-start, $l-start );
-	$hsl-end : hsl( $h-end, $s-start, $l-start );
-	background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+	background-image: test( $direction, $h-start, $s-start, $l-start );
 	}
 
 }
+
+
 
 @mixin aurrorItAnalogous( $direction, $h-start, $h-direction ) {
 	
