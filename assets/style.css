@@ -1,6 +1,8 @@
-/* plugin */
 body {
-  background-image: -webkit-linear-gradient(top, #b3ee95 0%, #d195ee 100%);
+  /* background-image: -webkit-linear-gradient(top, #b3ee95 0%, #d195ee 100%); */
+  /* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
+  /* @include aurrorItComplementary( top, 10, pale ); */
+  background-image: -webkit-linear-gradient(top, #b3ee95 0%, #eea495 100%);
   height: 100vh; }
 
 h1 {

@@ -1,11 +1,14 @@
 
 
-/* plugin */
+// plugin 
 @import "mixin/aurror";
 @import "variables/logocolors";
 
 body {
-	@include aurrorItCompl( top, 100, pastel );
+	/* @include aurrorItCompl( top, 100, pastel ); */
+	/* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
+	/* @include aurrorItComplementary( top, 10, pale ); */
+	@include aurrorItAnalogous( top, 100, right );
 	height: 100vh;
 }
 h1 {
