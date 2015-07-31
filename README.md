@@ -53,9 +53,25 @@ Syntax:
 .css-selector {
 	@include aurrorItAnalogous( $gradient-direction, $hue-start, $hue-direction, $alpha-start, $alpha-end );
 }
+
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
 * $hue-direction = left | right
+* $alpha-start = starting opacity which the gradient starts
+* $alpha-end = starting opacity which the gradient end
+
+## aurrorItTriad()
+Use it to create gradient using triad scheme from color wheel.
+
+Syntax:
+.css-selector {
+	@include aurrorItTriad( $gradient-direction, $hue-start, $saturation-start, $lightness-start, $alpha-start, $alpha-stop-1, $alpha-stop-2 );
+}
+
+* $gradient-direction = top | left | bottom | right
+* $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
+* $saturation-start = between 0% to 100%
+* $lightness-start = between 0% to 100%
 * $alpha-start = starting opacity which the gradient starts
 * $alpha-end = starting opacity which the gradient end
 
