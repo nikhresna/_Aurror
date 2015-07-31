@@ -65,13 +65,14 @@ Use it to create gradient using triad scheme from color wheel.
 
 Syntax:
 .css-selector {
-	@include aurrorItTriad( $gradient-direction, $hue-start, $saturation-start, $lightness-start, $alpha-start, $alpha-stop-1, $alpha-stop-2 );
+	@include aurrorItTriad( $gradient-direction, $hue-start, $saturation-start, $lightness-start, $hue-direction, $alpha-start, $alpha-stop-1, $alpha-stop-2 );
 }
 
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
 * $saturation-start = between 0% to 100%
 * $lightness-start = between 0% to 100%
+* $hue-direction = left | right
 * $alpha-start = starting opacity which the gradient starts
 * $alpha-stop-1 = starting opacity for the first color stop
 * $alpha-stop-2 = starting opacity for the second color stop
