@@ -1,4 +1,6 @@
-
+// Monochromatic gradient
+//
+//
 
 @mixin aurrorItMonochromatic( $direction, $color-start, $type ) {
 	@if $type == darker {
@@ -16,55 +18,70 @@
 	}
 }
 
+//
+//
+//Monochromatic gradient
 
-@function test( $direction, $h-start, $s-start, $l-start ){
-	$h-end :$h-start + 180;
+
+// Complementary gradient
+//
+//
+
+@function calcGrad( $direction, $h-start, $s-start, $l-start, $modifier ){
+	$h-end :$h-start + $modifier;
 	$hsl-start : hsl( $h-start, $s-start, $l-start );
 	$hsl-end : hsl( $h-end, $s-start, $l-start );
 	@return -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+
 }
 
 @mixin aurrorItComplementary( $direction, $h-start, $type ) {
-	
+	$modifier : 180;
 	@if $type == pastel {
 	$s-start : 73%;
 	$l-start : 76%;
-	background-image: test( $direction, $h-start, $s-start, $l-start );
+	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
 	}
 
 	@if $type == gothic {
-	$s-start : 82%;
+	$s-start : 41%;
 	$l-start : 21%;
-	background-image: test( $direction, $h-start, $s-start, $l-start );
+	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
 	}
 
 	@if $type == pale {
 	$s-start : 32%;
 	$l-start : 81%;
-	background-image: test( $direction, $h-start, $s-start, $l-start );
+	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
 	}
 
 }
+//
+//
+// End complementary gradient
 
 
+// Analogous gradient
+//
+//
 
 @mixin aurrorItAnalogous( $direction, $h-start, $h-direction ) {
 	
+	
 	@if $h-direction == left {
-		$h-end : $h-start + 90;
+		$modifier : 90;
 		$s-start : 73%;
 		$l-start : 76%;
-		$hsl-start : hsl( $h-start, $s-start, $l-start );
-		$hsl-end : hsl( $h-end, $s-start, $l-start );
-		background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
 	}
-
 	@if $h-direction == right {
-		$h-end : $h-start - 90;
+		$modifier : -90;
 		$s-start : 73%;
 		$l-start : 76%;
-		$hsl-start : hsl( $h-start, $s-start, $l-start );
-		$hsl-end : hsl( $h-end, $s-start, $l-start );
-		background-image: -webkit-linear-gradient( $direction, $hsl-start 0%, $hsl-end 100%);
+		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
 	}
 }
+
+//
+//
+// End Analogous gradient

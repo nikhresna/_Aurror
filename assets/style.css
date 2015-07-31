@@ -1,7 +1,7 @@
 body {
   /* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
-  background-image: -webkit-linear-gradient(top, #bfd9de 0%, #dec4bf 100%);
-  /* @include aurrorItAnalogous( top, 100, right ); */
+  /* @include aurrorItComplementary( top, 100, gothic ); */
+  background-image: -webkit-linear-gradient(top, #95b3ee 0%, #ee95e0 100%);
   height: 100vh; }
 
 h1 {
