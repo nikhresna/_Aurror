@@ -1,6 +1,5 @@
+// =========================================
 // Monochromatic gradient
-//
-//
 
 @mixin aurrorItMonochromatic( $direction, $color-start, $type ) {
 	@if $type == darker {
@@ -18,64 +17,59 @@
 	}
 }
 
-//
-//
-//Monochromatic gradient
+// Monochromatic gradient
+// =========================================
 
 
 
+// =========================================
 // Complementary gradient
-//
-//
 
 
-@mixin aurrorItComplementary( $direction, $h-start, $type ) {
+@mixin aurrorItComplementary( $direction, $h-start, $type, $a-start, $a-end ) {
 	$modifier : 180;
+	
 	@if $type == pastel {
 	$s-start : 73%;
 	$l-start : 76%;
-	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
+	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
 
 	@if $type == gothic {
 	$s-start : 41%;
 	$l-start : 21%;
-	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
+	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
 
 	@if $type == pale {
 	$s-start : 32%;
 	$l-start : 81%;
-	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
+	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
 
 }
-//
-//
+
 // End complementary gradient
+// =========================================
 
 
+
+// =========================================
 // Analogous gradient
-//
-//
 
-@mixin aurrorItAnalogous( $direction, $h-start, $h-direction ) {
-	
-	
+@mixin aurrorItAnalogous( $direction, $h-start, $h-direction, $a-start, $a-end ) {
+	$s-start : 73%;
+	$l-start : 76%;
+
 	@if $h-direction == left {
 		$modifier : 90;
-		$s-start : 73%;
-		$l-start : 76%;
-		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
+		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
 	@if $h-direction == right {
 		$modifier : -90;
-		$s-start : 73%;
-		$l-start : 76%;
-		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier );
+		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
 }
 
-//
-//
 // End Analogous gradient
+// =========================================

@@ -26,6 +26,7 @@ Syntax is as follows:
 * $color-start = hex | rgb | rgba | hsl | hsla
 * $lightness = darker | lighter 
 
+
 ## aurrorItComplementary()
 While aurrorItMonochromatic() generates darker/lighter color,
 aurrorItComplementary() generates complimentary (opposite) color for color-stop from given color.
@@ -33,25 +34,28 @@ aurrorItComplementary() generates complimentary (opposite) color for color-stop 
 Syntax is as follows:
 
 .css-selector {
-	@include aurrorItComplementary( $gradient-direction, $hue-start, $color-type );
+	@include aurrorItComplementary( $gradient-direction, $hue-start, $color-type, $alpha-start, $alpha-end );
 }
 
 
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
 * $color-type = pastel | gothic | pale
+* $alpha-start = starting opacity which the gradient starts
+* $alpha-end = starting opacity which the gradient end
 
 ## aurrorItAnalogous()
 This mixin generates gradient of colors located adjacent (next to) to each other on color wheel.
 
 Syntax:
 .css-selector {
-	@include aurrorItAnalogous( $gradient-direction, $hue-start, $hue-direction );
+	@include aurrorItAnalogous( $gradient-direction, $hue-start, $hue-direction, $alpha-start, $alpha-end );
 }
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
 * $hue-direction = left | right
-
+* $alpha-start = starting opacity which the gradient starts
+* $alpha-end = starting opacity which the gradient end
 
 ### added
 Socials logo color library = _Aurror/assets/scss/variables/_logocolors.scss

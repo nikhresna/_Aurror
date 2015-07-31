@@ -1,0 +1,14 @@
+// Function for gradient
+//
+//
+
+@function calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end ){
+	$h-end :$h-start + $modifier;
+	$hsla-start : hsla( $h-start, $s-start, $l-start, $a-start );
+	$hsla-end : hsla( $h-end, $s-start, $l-start, $a-end );
+	@return -webkit-linear-gradient( $direction, $hsla-start 0%, $hsla-end 100%);
+}
+
+//
+//
+// Function for gradient
