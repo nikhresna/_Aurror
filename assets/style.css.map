@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAMA,IAAK;;;ECoEH,gBAAgB,EAAE,sDAA+D;ED/DlF,MAAM,EAAE,KAAK;;AAEd,EAAG;EACF,KAAK,EEZQ,OAAO;EFapB,WAAW,EAAE,YAAY",
+"mappings": "AAWA,IAAK;;;ECyDH,gBAAgB,EAAE,sDAA+D;EDpDlF,MAAM,EAAE,KAAK;;AAEd,EAAG;EACF,KAAK,EEjBQ,OAAO;EFkBpB,WAAW,EAAE,YAAY",
 "sources": ["scss/style.scss","scss/mixin/_aurror.scss","scss/variables/_logocolors.scss"],
 "names": [],
 "file": "style.css"

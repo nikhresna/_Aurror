@@ -1,7 +1,12 @@
 
 
-// plugin 
+// mixin library 
 @import "mixin/aurror";
+
+// function library
+@import "function/func";
+
+// variable library
 @import "variables/logocolors";
 
 body {
