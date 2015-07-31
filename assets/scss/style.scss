@@ -5,7 +5,7 @@
 @import "variables/logocolors";
 
 body {
-	@include aurrorItCompl( top, 10, pastel );
+	@include aurrorItCompl( top, 100, pastel );
 	height: 100vh;
 }
 h1 {
