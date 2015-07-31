@@ -1,5 +1,6 @@
 # _Aurror
 Gradient mixin' library
+It has come to my concern that many developers have problem to find perfect color for gradients, and many designers have problems in coding. This _Aurror lets them create gradients in seconds while keeping colors and coding perfect.
 
 * Required SASS runnin' for use.
 * Currently works only on Chrome 10+
