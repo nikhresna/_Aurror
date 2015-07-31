@@ -6,7 +6,7 @@ It has come to my concern that many developers have problem to find perfect colo
 
 * Required SASS runnin' for use.
 * Currently works only on Chrome 10+
-
+* index.html included for sample
 
 This _Aurror auto generates good lookin' gradient with a single line of SASS.
 Is recommended to run sass --watch assets/scss:asset from _Aurror root directory.
