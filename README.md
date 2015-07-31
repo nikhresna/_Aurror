@@ -73,7 +73,8 @@ Syntax:
 * $saturation-start = between 0% to 100%
 * $lightness-start = between 0% to 100%
 * $alpha-start = starting opacity which the gradient starts
-* $alpha-end = starting opacity which the gradient end
+* $alpha-stop-1 = starting opacity for the first color stop
+* $alpha-stop-2 = starting opacity for the second color stop
 
 ### added
 Socials logo color library = _Aurror/assets/scss/variables/_logocolors.scss
