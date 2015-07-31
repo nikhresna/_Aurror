@@ -1,7 +1,8 @@
-// =========================================
+// ----------------------
 // Monochromatic gradient
 
 @mixin aurrorItMonochromatic( $direction, $color-start, $type ) {
+	
 	@if $type == darker {
 		$color-stop : ( $color-start / 4 )*2;
 
@@ -15,49 +16,52 @@
 		background-image: -webkit-linear-gradient( $direction, $color-start 0%, $color-stop 100%);
 		background-image: -ms-linear-gradient( $direction, $color-start 0%, $color-stop 100%);
 	}
+
 }
 
 // Monochromatic gradient
-// =========================================
+// ----------------------
 
 
 
-// =========================================
+// ----------------------
 // Complementary gradient
 
 
 @mixin aurrorItComplementary( $direction, $h-start, $type, $a-start, $a-end ) {
+	
 	$modifier : 180;
 
 	@if $type == pastel {
-	$s-start : 73%;
-	$l-start : 76%;
-	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
+		$s-start : 73%;
+		$l-start : 76%;
+		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
 
 	@if $type == gothic {
-	$s-start : 41%;
-	$l-start : 21%;
-	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
+		$s-start : 41%;
+		$l-start : 21%;
+		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
 
 	@if $type == pale {
-	$s-start : 32%;
-	$l-start : 81%;
-	background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
+		$s-start : 32%;
+		$l-start : 81%;
+		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
 
 }
 
 // End complementary gradient
-// =========================================
+// --------------------------
 
 
 
-// =========================================
+// ------------------
 // Analogous gradient
 
 @mixin aurrorItAnalogous( $direction, $h-start, $h-direction, $a-start, $a-end ) {
+
 	$s-start : 73%;
 	$l-start : 76%;
 
@@ -65,30 +69,34 @@
 		$modifier : 90;
 		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
+
 	@if $h-direction == right {
 		$modifier : -90;
 		background-image: calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end );
 	}
+
 }
 
 // End Analogous gradient
-// =========================================
+// ----------------------
 
 
-// =========================================
+// --------------
 // Triad gradient
 
-@mixin aurrorItTriad( $direction, $h-start, $s-start, $l-start, $a-start, $a-stop-1, $a-stop-2 ) {
-	$modifier : 120;
+@mixin aurrorItTriad( $direction, $h-start, $s-start, $l-start, $h-direction, $a-start, $a-stop-1, $a-stop-2 ) {
 
-	$h-stop-1 : $h-start + $modifier;
-	$h-stop-2 : $h-stop-1 + $modifier;
-	$hsla-start : hsla( $h-start, $s-start, $l-start, $a-start );
-	$hsla-stop-1 : hsla( $h-stop-1, $s-start, $l-start, $a-stop-1 );
-	$hsla-stop-2 : hsla( $h-stop-2, $s-start, $l-start, $a-stop-2 );
-	background-image : -webkit-linear-gradient( $direction, $hsla-start 0%, $hsla-stop-1 50%, $hsla-stop-2  100%)
+	@if $h-direction == left {
+		$modifier : 120;
+		background-image : calcGradTriad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-stop-1, $a-stop-2  );
+	}
+
+	@if $h-direction == right {
+		$modifier : -120;
+		background-image : calcGradTriad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-stop-1, $a-stop-2  );
+	}
 
 }
 
 // Triad gradient
-// =========================================
+// --------------

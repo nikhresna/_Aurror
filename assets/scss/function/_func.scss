@@ -1,6 +1,5 @@
 // Function for gradient
-//
-//
+// ---------------------
 
 @function calcGrad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-end ){
 
@@ -10,6 +9,21 @@
 	@return -webkit-linear-gradient( $direction, $hsla-start 0%, $hsla-end 100%);
 }
 
-//
-//
+// ---------------------
+// Function for gradient
+
+
+// Function for gradient
+// ---------------------
+
+@function calcGradTriad( $direction, $h-start, $s-start, $l-start, $modifier, $a-start, $a-stop-1, $a-stop-2  ) {
+	$h-stop-1 : $h-start + $modifier;
+	$h-stop-2 : $h-stop-1 + $modifier;
+	$hsla-start : hsla( $h-start, $s-start, $l-start, $a-start );
+	$hsla-stop-1 : hsla( $h-stop-1, $s-start, $l-start, $a-stop-1 );
+	$hsla-stop-2 : hsla( $h-stop-2, $s-start, $l-start, $a-stop-2 );
+	@return -webkit-linear-gradient( $direction, $hsla-start 0%, $hsla-stop-1 50%, $hsla-stop-2  100%)
+}
+
+// ---------------------
 // Function for gradient
