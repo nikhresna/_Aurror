@@ -28,7 +28,7 @@
 // Complementary gradient
 
 
-@mixin aurrorItComplementary( $direction, $h-start, $type, $a-start, $a-end ) {
+@mixin aurrorItComplementary( $direction, $h-start, $type, $a-start: 1, $a-end: 1 ) {
 	
 	$modifier : 180;
 
@@ -60,7 +60,7 @@
 // ------------------
 // Analogous gradient
 
-@mixin aurrorItAnalogous( $direction, $h-start, $h-direction, $a-start, $a-end ) {
+@mixin aurrorItAnalogous( $direction, $h-start, $h-direction, $a-start: 1, $a-end: 1 ) {
 
 	$s-start : 73%;
 	$l-start : 76%;
@@ -84,7 +84,7 @@
 // --------------
 // Triad gradient
 
-@mixin aurrorItTriad( $direction, $h-start, $s-start, $l-start, $h-direction, $a-start, $a-stop-1, $a-stop-2 ) {
+@mixin aurrorItTriad( $direction, $h-start, $s-start, $l-start, $h-direction, $a-start: 1, $a-stop-1: 1, $a-stop-2: 1  ) {
 
 	@if $h-direction == left {
 		$modifier : 120;
@@ -98,5 +98,13 @@
 
 }
 
-// Triad gradient
+// End Triad gradient
 // --------------
+
+
+// ---
+// 
+
+
+//
+// ---
