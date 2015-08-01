@@ -1,11 +1,18 @@
 body {
+  height: 100vh;
+  font-family: "Montserrat";
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   /* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
   /* @include aurrorItComplementary( top, 0, pastel ); */
   background-image: -webkit-linear-gradient(top, #95b3ee 0%, #ee95e0 100%);
-  /* @include aurrorItTriad( top, 120, 53%, 76%, right, 1, 1, 1 ); */
-  height: 100vh;
-  font-family: "Montserrat";
-  -webkit-font-smoothing: antialiased; }
+  /* @include aurrorItTriad( top, 120, 53%, 76%, right, 1, 1, 1 ); */ }
+
+p {
+  font-size: 20px;
+  font-size: 1.25rem; }
 
 h1 {
   font-family: 'Montserrat';

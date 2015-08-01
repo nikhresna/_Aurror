@@ -1,1 +1,10 @@
+// This mixin convert input pixel size to rem size, with px fallback
+// base size : 16px
+
+@mixin rem( $size ) {
+  font-size: $size;
+  font-size: calcRem( $size );
+}
+
+
 $fontDefault: 'Montserrat';

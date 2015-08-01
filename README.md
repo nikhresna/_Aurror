@@ -43,8 +43,8 @@ Syntax is as follows:
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
 * $color-type = pastel | gothic | pale
-* $alpha-start = starting opacity which the gradient starts
-* $alpha-end = starting opacity which the gradient end
+* $alpha-start = starting opacity which the gradient starts. Default 1
+* $alpha-end = starting opacity which the gradient end. Default 1
 
 ## aurrorItAnalogous()
 This mixin generates gradient of colors located adjacent (next to) to each other on color wheel.
@@ -57,8 +57,8 @@ Syntax:
 * $gradient-direction = top | left | bottom | right
 * $hue-start =  between 0 to 360, will work just fine for hue > 360 e.g. 1000
 * $hue-direction = left | right
-* $alpha-start = starting opacity which the gradient starts
-* $alpha-end = starting opacity which the gradient end
+* $alpha-start = starting opacity which the gradient starts. Default 1
+* $alpha-end = starting opacity which the gradient end. Default 1
 
 ## aurrorItTriad()
 Use it to create gradient using triad scheme from color wheel.
@@ -73,9 +73,9 @@ Syntax:
 * $saturation-start = between 0% to 100%
 * $lightness-start = between 0% to 100%
 * $hue-direction = left | right
-* $alpha-start = starting opacity which the gradient starts
-* $alpha-stop-1 = starting opacity for the first color stop
-* $alpha-stop-2 = starting opacity for the second color stop
+* $alpha-start = starting opacity which the gradient starts. Default 1
+* $alpha-stop-1 = starting opacity for the first color stop. Default 1
+* $alpha-stop-2 = starting opacity for the second color stop. Default 1
 
 ### added
 Socials logo color library = _Aurror/assets/scss/variables/_logocolors.scss

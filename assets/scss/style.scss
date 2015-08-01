@@ -1,10 +1,13 @@
 
 
 // mixin library 
+@import "mixin/reset";
 @import "mixin/aurror";
+@import "mixin/animation";
 
 // function library
-@import "function/func";
+@import "function/funcGrad";
+@import "function/funcTypo";
 
 // variable library
 @import "variables/logocolors";
@@ -12,15 +15,21 @@
 
 
 body {
+	height: 100vh;
+	font-family: $fontDefault;
+    -webkit-font-smoothing: antialiased;
+    @include resetAll();
 	/* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
 	/* @include aurrorItComplementary( top, 0, pastel ); */
 	@include aurrorItAnalogous( top, 220, left );
 	/* @include aurrorItTriad( top, 120, 53%, 76%, right, 1, 1, 1 ); */
-	height: 100vh;
-	font-family: $fontDefault;
-    -webkit-font-smoothing: antialiased;
 
 }
+
+p {
+	@include rem( 20px );
+}
+
 h1 {
 	font-family: 'Montserrat';
 	@include aurrorItComplementary( top, 0, pastel );
@@ -32,6 +41,7 @@ h1 {
     background-attachment: fixed;
     font-size: 10vh;
 }
+
 .page-title {
     text-align: center;
     margin-top: 70vh;
