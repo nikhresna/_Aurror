@@ -105,14 +105,20 @@
 // ---
 // 
 @function multi() {
-	@return -webkit-linear-gradient();
 	@each $direction in $directions {
-		
 	}
 }
 @mixin aurrotItMulti( $h-start, $s-start, $l-start, $directions... ) {
-	background-image: multi( $h-start, $s-start, $l-start, $directions... )
+	background-image: -webkit-linear-gradient( multi( $h-start, $s-start, $l-start, $directions... ) );
 }
 
 //
 // ---
+
+@mixin textFillBackground( $background-size, $background-position, $background-attachment ) {
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: $background-size;
+    background-position: $background-position;
+    background-attachment: $background-attachment;
+}

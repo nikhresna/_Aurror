@@ -33,12 +33,7 @@ p {
 h1 {
 	font-family: 'Montserrat';
 	@include aurrorItComplementary( top, 0, pastel );
-	-webkit-background-clip: text;
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+	@include textFillBackground( cover, center, fixed );
     font-size: 10vh;
 }
 
