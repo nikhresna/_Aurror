@@ -79,3 +79,6 @@ Syntax:
 
 ### added
 Socials logo color library = _Aurror/assets/scss/variables/_logocolors.scss
+Reset mixin = _Aurror/assets/scss/variables/_reset.scss
+Typography mixin = _Aurror/assets/scss/variables/_typography.scss
+Misc mixin = _Aurror/assets/scss/variables/_misc.scss
