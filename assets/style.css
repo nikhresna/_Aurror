@@ -1,5 +1,5 @@
-body {
-  height: 100vh;
+.page-title {
+  min-height: 170vh;
   font-family: "Montserrat";
   -webkit-font-smoothing: antialiased;
   margin: 0;
@@ -9,10 +9,22 @@ body {
   /* @include aurrorItComplementary( top, 0, pastel ); */
   background-image: -webkit-linear-gradient(top, #95b3ee 0%, #ee95e0 100%);
   /* @include aurrorItTriad( top, 120, 53%, 76%, right, 1, 1, 1 ); */ }
+  .page-title ::-moz-selection {
+    /* Code for Firefox */
+    color: #333;
+    background: #fff; }
+  .page-title ::selection {
+    color: #333;
+    background: #fff; }
 
 p {
   font-size: 20px;
   font-size: 1.25rem; }
+
+code {
+  background: #333;
+  padding: 3px 10px;
+  color: #fff; }
 
 h1 {
   font-family: 'Montserrat';
@@ -26,6 +38,6 @@ h1 {
 
 .page-title {
   text-align: center;
-  margin-top: 70vh; }
+  padding-top: 70vh; }
 
 /*# sourceMappingURL=style.css.map */

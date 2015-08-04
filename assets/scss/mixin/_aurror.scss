@@ -115,10 +115,3 @@
 //
 // ---
 
-@mixin textFillBackground( $background-size, $background-position, $background-attachment ) {
-	-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: $background-size;
-    background-position: $background-position;
-    background-attachment: $background-attachment;
-}

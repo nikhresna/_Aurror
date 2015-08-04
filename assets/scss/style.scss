@@ -14,8 +14,8 @@
 @import "variables/typography";
 
 
-body {
-	height: 100vh;
+.page-title {
+	min-height: 170vh;
 	font-family: $fontDefault;
     -webkit-font-smoothing: antialiased;
     @include resetAll();
@@ -23,13 +23,17 @@ body {
 	/* @include aurrorItComplementary( top, 0, pastel ); */
 	@include aurrorItAnalogous( top, 220, left );
 	/* @include aurrorItTriad( top, 120, 53%, 76%, right, 1, 1, 1 ); */
-
+	@include highlightText( #333, #fff );
 }
 
 p {
 	@include rem( 20px );
 }
-
+code {
+	background: #333;
+	padding: 3px 10px;
+	color: #fff;
+}
 h1 {
 	font-family: 'Montserrat';
 	@include aurrorItComplementary( top, 0, pastel );
@@ -39,5 +43,5 @@ h1 {
 
 .page-title {
     text-align: center;
-    margin-top: 70vh;
+    padding-top: 70vh;
  }
