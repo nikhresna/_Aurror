@@ -104,11 +104,11 @@
 
 // ---
 // 
-@function multi() {
+@function funcMultiChromatic() {
 	@each $direction in $directions {
 	}
 }
-@mixin aurrotItMulti( $h-start, $s-start, $l-start, $directions... ) {
+@mixin aurrotItMultiChromatic( $h-start, $s-start, $l-start, $directions... ) {
 	background-image: -webkit-linear-gradient( multi( $h-start, $s-start, $l-start, $directions... ) );
 }
 
