@@ -1,10 +1,26 @@
-.page-title {
-  min-height: 170vh;
+section {
+  margin: 8px;
+  padding: 8px;
+  box-sizing: border-box; }
+
+* {
+  -webkit-transition: 2s ease all;
+  -moz-transition: 2s ease all;
+  -ms-transition: 2s ease all;
+  -o-transition: 2s ease all;
+  transition: 2s ease all; }
+
+body {
   font-family: "Montserrat";
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; }
+
+section {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; }
+
+.page-title {
+  min-height: 170vh;
   /* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
   /* @include aurrorItComplementary( top, 0, pastel ); */
   background-image: -webkit-linear-gradient(top, #95b3ee 0%, #ee95e0 100%);
@@ -17,6 +33,19 @@
     color: #333;
     background: #fff; }
 
+.section-1 {
+  background-image: -webkit-linear-gradient(top, #7CA0C7 0%, #9bc8fa 100%);
+  background-image: -ms-linear-gradient(top, #7CA0C7 0%, #9bc8fa 100%);
+  padding: 25px; }
+
+.section-1 h2 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: -webkit-linear-gradient(left, #ee9595 0%, #c2ee95 100%); }
+
 p {
   font-size: 20px;
   font-size: 1.25rem; }
@@ -27,7 +56,6 @@ code {
   color: #fff; }
 
 h1 {
-  font-family: 'Montserrat';
   background-image: -webkit-linear-gradient(top, #ee9595 0%, #95eeee 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -35,6 +63,9 @@ h1 {
   background-position: center;
   background-attachment: fixed;
   font-size: 10vh; }
+
+h2 {
+  font-size: 7vh; }
 
 .page-title {
   text-align: center;

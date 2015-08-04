@@ -1,5 +1,5 @@
-@mixin resetAll() {
-	margin: 0;
-	padding: 0;
+@mixin resetAll( $default: 0 ) {
+	margin: $default;
+	padding: $default;
 	box-sizing: border-box;
 }

@@ -15,11 +15,23 @@
 @import "variables/typography";
 
 
-.page-title {
-	min-height: 170vh;
+section {
+	@include resetAll( 8px );
+}
+* {
+    @include transition( 2s ease all )
+}
+body {
 	font-family: $fontDefault;
     -webkit-font-smoothing: antialiased;
+}
+
+section {
     @include resetAll();
+}
+
+.page-title {
+	min-height: 170vh;
 	/* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
 	/* @include aurrorItComplementary( top, 0, pastel ); */
 	@include aurrorItAnalogous( top, 220, left );
@@ -27,19 +39,34 @@
 	@include highlightText( #333, #fff );
 }
 
+.section-1 {
+	@include aurrorItMonochromatic( top, #7CA0C7, lighter );
+	padding: 25px;
+}
+
+.section-1 h2 {
+	@include textFillBackground( cover, center, fixed );
+	@include aurrorItAnalogous( left, 0, left );
+}
+
 p {
 	@include rem( 20px );
 }
+
 code {
 	background: #333;
 	padding: 3px 10px;
 	color: #fff;
 }
+
 h1 {
-	font-family: 'Montserrat';
 	@include aurrorItComplementary( top, 0, pastel );
 	@include textFillBackground( cover, center, fixed );
     font-size: 10vh;
+}
+
+h2 {
+	font-size: 7vh;
 }
 
 .page-title {
