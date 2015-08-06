@@ -72,4 +72,19 @@ h2 {
 .page-title {
     text-align: center;
     padding-top: 70vh;
- }
+}
+ nav {
+ 	li {
+ 		list-style: none;
+	 	a {
+	 		width: 20px;
+	 		height: 20px;
+	 		border-width: 5px;
+	 		border-color: #000;
+	 		transform: rotate(45deg);
+	 		border-style: solid;
+	 		margin-left: 5px;
+	 		padding: 5px;
+	 	}
+	}
+}
