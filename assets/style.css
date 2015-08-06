@@ -76,17 +76,22 @@ nav li {
   nav li a {
     width: 20px;
     height: 20px;
-    transform: rotate(45deg);
     padding: 5px;
-    display: inline-block; }
+    display: inline-block;
+    position: relative; }
   nav li a:after, nav li a:before {
     content: '';
     position: absolute;
     height: 20px;
-    width: 5px; }
+    width: 5px;
+    right: 0; }
   nav li a:after {
-    transform: rotate(45deg); }
-  nav li a:before {
+    top: 0;
+    background-image: -webkit-linear-gradient(45deg, #ee9595 0%, #c2ee95 100%);
     transform: rotate(-45deg); }
+  nav li a:before {
+    bottom: 0;
+    background-image: -webkit-linear-gradient(-45deg, #ee9595 0%, #c2ee95 100%);
+    transform: rotate(45deg); }
 
 /*# sourceMappingURL=style.css.map */

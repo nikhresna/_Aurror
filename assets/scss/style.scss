@@ -79,24 +79,26 @@ h2 {
 	 	a {
 	 		width: 20px;
 	 		height: 20px;
-	 		transform: rotate(45deg);
 	 		padding: 5px;
 	 		display: inline-block;
-	 		
+	 		position: relative;
 	 	}
 	 	a:after, a:before {
 	 		content: '';
 	 		position: absolute;
 	 		height: 20px;
 	 		width: 5px;
+	 		right: 0;
 	 	}
 	 	a:after {
-	 		transform: rotate(45deg);
-	 		@include aurrorItAnalogous( left, 0, pastel );
+	 		top: 0;
+	 		@include aurrorItAnalogous( 45deg, 0, left );
+	 		transform: rotate(-45deg);
 	 	}
 	 	a:before {
-	 		transform: rotate(-45deg);
-	 		@include aurrorItAnalogous( left, 0, pastel );
+	 		bottom: 0;
+	 		@include aurrorItAnalogous( -45deg, 0, left );
+	 		transform: rotate(45deg);
 	 	}	
 	}
 }
