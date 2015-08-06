@@ -79,12 +79,24 @@ h2 {
 	 	a {
 	 		width: 20px;
 	 		height: 20px;
-	 		border-width: 5px;
-	 		border-color: #000;
 	 		transform: rotate(45deg);
-	 		border-style: solid;
-	 		margin-left: 5px;
 	 		padding: 5px;
+	 		display: inline-block;
+	 		
 	 	}
+	 	a:after, a:before {
+	 		content: '';
+	 		position: absolute;
+	 		height: 20px;
+	 		width: 5px;
+	 	}
+	 	a:after {
+	 		transform: rotate(45deg);
+	 		@include aurrorItAnalogous( left, 0, pastel );
+	 	}
+	 	a:before {
+	 		transform: rotate(-45deg);
+	 		@include aurrorItAnalogous( left, 0, pastel );
+	 	}	
 	}
 }

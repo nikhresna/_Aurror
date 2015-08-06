@@ -76,11 +76,17 @@ nav li {
   nav li a {
     width: 20px;
     height: 20px;
-    border-width: 5px;
-    border-color: #000;
     transform: rotate(45deg);
-    border-style: solid;
-    margin-left: 5px;
-    padding: 5px; }
+    padding: 5px;
+    display: inline-block; }
+  nav li a:after, nav li a:before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 5px; }
+  nav li a:after {
+    transform: rotate(45deg); }
+  nav li a:before {
+    transform: rotate(-45deg); }
 
 /*# sourceMappingURL=style.css.map */
