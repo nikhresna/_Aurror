@@ -44,12 +44,8 @@ section {
   padding: 25px; }
 
 .section-1 h2 {
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-image: -webkit-linear-gradient(left, #ee9595 0%, #c2ee95 100%); }
+  /* @include textFillBackground( cover, center, fixed );
+  @include aurrorItAnalogous( left, 0, left ); */ }
 
 p {
   font-size: 20px;
