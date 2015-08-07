@@ -1,17 +1,118 @@
 
 
-// plugin 
+// mixin library 
+@import "mixin/reset";
 @import "mixin/aurror";
-@import "variables/logocolors";
+@import "mixin/animation";
+@import "mixin/misc";
 
+// function library
+@import "function/funcGrad";
+@import "function/funcTypo";
+
+// variable library
+@import "variables/logocolors";
+@import "variables/typography";
+
+
+section {
+	@include resetAll( 8px );
+}
+* {
+    @include transition( 2s ease all )
+}
 body {
+<<<<<<< HEAD
 	/* @include aurrorItCompl( top, 100, pastel ); */
 	/* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
 	/* @include aurrorItComplementary( top, 10, pale ); */
 	@include aurrorItAnalogous( top, 100, right );
 	height: 100vh;
+=======
+	font-family: $fontDefault;
+    -webkit-font-smoothing: antialiased;
 }
+
+section {
+    @include resetAll();
+}
+
+.page-title {
+	min-height: 170vh;
+	/* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
+	/* @include aurrorItComplementary( top, 0, pastel ); */
+	@include aurrorItAnalogous( top, 220, left );
+	/* @include aurrorItTriad( top, 120, 53%, 76%, right, 1, 1, 1 ); */
+	@include highlightText( #333, #fff );
+}
+
+.section-1 {
+	@include aurrorItMonochromatic( top, #7CA0C7, lighter );
+	padding: 25px;
+}
+
+.section-1 h2 {
+	@include textFillBackground( cover, center, fixed );
+	@include aurrorItAnalogous( left, 0, left );
+}
+
+p {
+	@include rem( 20px );
+>>>>>>> 216314017618258a8e51cc0f09322f2520d0f2dc
+}
+
+code {
+	background: #333;
+	padding: 3px 10px;
+	color: #fff;
+}
+
 h1 {
+<<<<<<< HEAD
 	color: $facebookHex;
 	font-family: 'Montserrat';
 }
+=======
+	@include aurrorItComplementary( top, 0, pastel );
+	@include textFillBackground( cover, center, fixed );
+    font-size: 10vh;
+}
+
+h2 {
+	font-size: 7vh;
+}
+
+.page-title {
+    text-align: center;
+    padding-top: 70vh;
+}
+ nav {
+ 	li {
+ 		list-style: none;
+	 	a {
+	 		width: 20px;
+	 		height: 20px;
+	 		padding: 5px;
+	 		display: inline-block;
+	 		position: relative;
+	 	}
+	 	a:after, a:before {
+	 		content: '';
+	 		position: absolute;
+	 		height: 20px;
+	 		width: 5px;
+	 		right: 0;
+	 	}
+	 	a:after {
+	 		top: 0;
+	 		@include aurrorItAnalogous( 45deg, 0, left );
+	 		transform: rotate(-45deg);
+	 	}
+	 	a:before {
+	 		bottom: 0;
+	 		@include aurrorItAnalogous( -45deg, 0, left );
+	 		transform: rotate(45deg);
+	 	}	
+	}
+}
+>>>>>>> 216314017618258a8e51cc0f09322f2520d0f2dc
