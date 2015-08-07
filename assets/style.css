@@ -1,0 +1,110 @@
+section {
+  margin: 8px;
+  padding: 8px;
+  box-sizing: border-box; }
+
+* {
+  -webkit-transition: 2s ease all;
+  -moz-transition: 2s ease all;
+  -ms-transition: 2s ease all;
+  -o-transition: 2s ease all;
+  transition: 2s ease all; }
+
+body {
+  /* @include aurrorItCompl( top, 100, pastel ); */
+  /* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
+  /* @include aurrorItComplementary( top, 10, pale ); */
+  /* @include aurrorItAnalogous( top, 100, right ); */
+  height: 100vh;
+  font-family: "Montserrat";
+  -webkit-font-smoothing: antialiased; }
+
+section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.page-title {
+  min-height: 170vh;
+  /* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
+  /* @include aurrorItComplementary( top, 0, pastel ); */
+  background-image: -webkit-linear-gradient(top, #95b3ee 0%, #ee95e0 100%);
+  /* @include aurrorItTriad( top, 120, 53%, 76%, right, 1, 1, 1 ); */ }
+  .page-title ::-moz-selection {
+    /* Code for Firefox */
+    color: #333;
+    background: #fff; }
+  .page-title ::selection {
+    color: #333;
+    background: #fff; }
+
+.section-1 {
+  background-image: -webkit-linear-gradient(top, #7CA0C7 0%, #9bc8fa 100%);
+  background-image: -ms-linear-gradient(top, #7CA0C7 0%, #9bc8fa 100%);
+  padding: 25px; }
+
+.section-1 h2 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: -webkit-linear-gradient(left, #ee9595 0%, #c2ee95 100%); }
+
+p {
+  font-size: 20px;
+  font-size: 1.25rem;
+  color: #fff; }
+
+code {
+  background: #333;
+  padding: 3px 10px;
+  color: #fff; }
+
+h1 {
+  background-image: -webkit-linear-gradient(top, #ee9595 0%, #95eeee 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-size: 10vh; }
+
+h2 {
+  font-size: 7vh; }
+
+.page-title {
+  text-align: center;
+  padding-top: 70vh; }
+
+nav li {
+  list-style: none; }
+  nav li a {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: inline-block;
+    position: relative;
+    background-image: -webkit-linear-gradient(-45deg, #ee9595 0%, #95eeee 100%);
+    transform: rotate(45deg);
+    margin-right: 15px;
+    color: #000;
+    font-size: 40px; }
+  nav li a:after {
+    content: '';
+    position: absolute;
+    height: 42px;
+    width: 40px;
+    left: -1px;
+    background-color: #fff;
+    top: 8px;
+    z-index: -999;
+    -webkit-transition: 0.5s ease all;
+    -moz-transition: 0.5s ease all;
+    -ms-transition: 0.5s ease all;
+    -o-transition: 0.5s ease all;
+    transition: 0.5s ease all; }
+  nav li a:hover:after {
+    top: -3px; }
+
+/*# sourceMappingURL=style.css.map */

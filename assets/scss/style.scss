@@ -22,13 +22,11 @@ section {
     @include transition( 2s ease all )
 }
 body {
-<<<<<<< HEAD
 	/* @include aurrorItCompl( top, 100, pastel ); */
 	/* @include aurrorItMonochromatic( top, #7CA0C7, lighter ); */
 	/* @include aurrorItComplementary( top, 10, pale ); */
-	@include aurrorItAnalogous( top, 100, right );
+	/* @include aurrorItAnalogous( top, 100, right ); */
 	height: 100vh;
-=======
 	font-family: $fontDefault;
     -webkit-font-smoothing: antialiased;
 }
@@ -58,7 +56,7 @@ section {
 
 p {
 	@include rem( 20px );
->>>>>>> 216314017618258a8e51cc0f09322f2520d0f2dc
+	color: #fff;
 }
 
 code {
@@ -68,11 +66,6 @@ code {
 }
 
 h1 {
-<<<<<<< HEAD
-	color: $facebookHex;
-	font-family: 'Montserrat';
-}
-=======
 	@include aurrorItComplementary( top, 0, pastel );
 	@include textFillBackground( cover, center, fixed );
     font-size: 10vh;
@@ -90,29 +83,30 @@ h2 {
  	li {
  		list-style: none;
 	 	a {
-	 		width: 20px;
-	 		height: 20px;
+	 		width: 40px;
+	 		height: 40px;
 	 		padding: 5px;
 	 		display: inline-block;
 	 		position: relative;
-	 	}
-	 	a:after, a:before {
-	 		content: '';
-	 		position: absolute;
-	 		height: 20px;
-	 		width: 5px;
-	 		right: 0;
+	 		@include aurrorItComplementary( -45deg, 0, pastel );
+	 		transform: rotate(45deg);
+	 		margin-right: 15px;
+	 		color: #000;
+	 		font-size:40px;
 	 	}
 	 	a:after {
-	 		top: 0;
-	 		@include aurrorItAnalogous( 45deg, 0, left );
-	 		transform: rotate(-45deg);
+			content: '';
+		    position: absolute;
+		    height: 42px;
+		    width: 40px;
+		    left: -1px;
+		    background-color: #fff;
+		    top: 8px;
+		    z-index: -999;
+		    @include transition( 0.5s ease all );
 	 	}
-	 	a:before {
-	 		bottom: 0;
-	 		@include aurrorItAnalogous( -45deg, 0, left );
-	 		transform: rotate(45deg);
-	 	}	
+	 	a:hover:after {
+			top: -3px;
+	 	}
 	}
 }
->>>>>>> 216314017618258a8e51cc0f09322f2520d0f2dc
